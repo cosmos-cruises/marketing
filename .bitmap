@@ -1,15 +1,15 @@
 {
-  "forever-mars-app": {
-    "scope": "cosmos-cruises.forever-mars",
-    "version": "0.0.4",
-    "mainFile": "index.ts",
-    "rootDir": "forever-mars/forever-mars-app"
-  },
-  "pages/homepage": {
-    "scope": "cosmos-cruises.marketing",
-    "version": "0.0.3",
-    "mainFile": "index.ts",
-    "rootDir": "marketing/pages/homepage"
-  },
-  "$schema-version": "15.0.0"
+    "forever-mars-app": {
+        "scope": "cosmos-cruises.forever-mars",
+        "version": "0.0.4",
+        "mainFile": "index.ts",
+        "rootDir": "forever-mars/forever-mars-app"
+    },
+    "pages/homepage": {
+        "scope": "cosmos-cruises.marketing",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "marketing/pages/homepage"
+    },
+    "$schema-version": "15.0.0"
 }
