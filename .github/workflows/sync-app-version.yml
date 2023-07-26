@@ -12,32 +12,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
+          repository: 'cosmos-cruises/marketing' # Source repo
+          token: ${{ secrets.GITHUB_TOKEN }} # Make sure this token has write access to the source repo
+          path: 'source-repo'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install json5
+
+      - name: Get the app version from source repo
+        id: get_version
+        run: |
+          cd source-repo
+          APP_VERSION=$(python -c "import json5; with open('.bitmap') as f: data = json5.load(f); print(data['forever-mars-app']['version'])")
+          echo "App Version: ${APP_VERSION}"
+          echo "::set-output name=version::${APP_VERSION}"
+
+      - name: Checkout target repository
+        uses: actions/checkout@v2
+        with:
           repository: 'cosmos-cruises/booking' # Target repo
           token: ${{ secrets.GITHUB_TOKEN }} # Make sure this token has write access to the target repo
           path: 'target-repo'
 
-      - name: Update version in bitmap file
+      - name: Update the app version in target repo
         run: |
           cd target-repo
-          python3 -c "
-          import json
-          # Load data from source bitmap
-          with open('.bitmap') as source:
-            source_data = json.load(source)
-          # Load data from target bitmap
-          with open('.bitmap', 'r+') as target: 
-            target_data = json.load(target)
-            # Get version from source bitmap and update it in target bitmap
-            target_data['forever-mars-app']['version'] = source_data['forever-mars-app']['version']
-            target.seek(0)
-            json.dump(target_data, target, indent=4)
-            target.truncate()"
-
-      - name: Commit and push
-        run: |
-          cd target-repo
-          git config user.name 'GitHub Action'
-          git config user.email 'action@github.com'
+          python -c "import json5; with open('.bitmap') as f: data = json5.load(f); data['forever-mars-app']['version'] = '${{ steps.get_version.outputs.version }}'; with open('.bitmap', 'w') as f: json5.dump(data, f)"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add .bitmap
-          git commit -m "Update component version"
-          git push
+          git commit -m "Sync app version"
+          git push origin main
