@@ -1,9 +1,9 @@
 name: Sync Component Version
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    paths:
+      - '.bitmap'
+  workflow_dispatch:
 
 jobs:
   sync-version:
