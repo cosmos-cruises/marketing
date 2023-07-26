@@ -21,7 +21,7 @@ jobs:
         with:
           repository: 'cosmos-cruises/booking' # Target repo
           path: 'target-repo'
-          token: ${{ secrets.GITHUB_TOKEN }} # Make sure this token has write access to the target repo
+          token: ${{ secrets.PAT }} # Make sure this token has write access to the target repo
 
       - name: Set up Python
         uses: actions/setup-python@v2
