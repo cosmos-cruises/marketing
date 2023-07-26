@@ -1,26 +1,23 @@
-name: Pull Request Build
+name: Build and Verify
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-permissions:
-  pull-requests: write
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
 jobs:
-  prbuild:
+  build:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      BIT_TOKEN: ${{ secrets.BIT_TOKEN }}
-      NODE_OPTIONS: --max_old_space_size=4096
+      BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_CONFIG_USER_TOKEN}}
     steps:
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Initialize Bit
         uses: bit-tasks/init@v1
-      - name: Bit Pull Request
-        uses: bit-tasks/pull-request@main
+      - name: Bit Verify
+        uses: bit-tasks/verify@v1
