@@ -22,7 +22,7 @@ jobs:
           python3 -c "
           import json
           # Load data from source bitmap
-          with open('../.bitmap') as source:
+          with open('.bitmap') as source:
             source_data = json.load(source)
           # Load data from target bitmap
           with open('.bitmap', 'r+') as target: 
