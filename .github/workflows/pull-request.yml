@@ -11,21 +11,26 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      BIT_TOKEN: ${{ secrets.BIT_TOKEN }}
+      BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_CONFIG_USER_TOKEN}}
       NODE_OPTIONS: --max_old_space_size=4096
     steps:
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Pull latest from main
+      - name: Set Git user
         run: |
-          git checkout main
-          git pull
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+
+      - name: Merge latest from main
+        run: |
+          git fetch origin main
+          git merge origin/main --allow-unrelated-histories
 
       - name: Initialize Bit
         uses: bit-tasks/init@v1
