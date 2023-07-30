@@ -1,7 +1,7 @@
 {
     "forever-mars-app": {
         "scope": "cosmos-cruises.forever-mars",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "forever-mars/forever-mars-app"
     },
