@@ -35,5 +35,5 @@ jobs:
       - name: Commit Bitmap
         uses: bit-tasks/commit-bitmap@v1
         with:
-          git-user-name: ${{ steps.commit.outputs.user_name }}
-          git-user-email: ${{ steps.commit.outputs.user_email }}
+          GIT_USER_NAME: ${{ steps.commit.outputs.user_name }}
+          GIT_USER_EMAIL: ${{ steps.commit.outputs.user_email }}
