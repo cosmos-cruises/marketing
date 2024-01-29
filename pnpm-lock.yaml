@@ -17,6 +17,30 @@ importers:
       '@babel/runtime':
         specifier: 7.21.0
         version: 7.21.0
+      '@bitdev/react.app-types.vite-react':
+        specifier: 1.1.15
+        version: 1.1.15
+      '@cosmo-cruises/booking.pages.book-a-trip':
+        specifier: 0.0.7
+        version: 0.0.7(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/design.themes.theme-provider':
+        specifier: 0.0.2
+        version: 0.0.2(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/forever-mars.contexts.settings-context':
+        specifier: 0.0.1
+        version: 0.0.1(react@18.2.0)
+      '@cosmo-cruises/forever-mars.layouts.main':
+        specifier: 0.0.1
+        version: 0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/marketing.constants.data':
+        specifier: 0.0.1
+        version: 0.0.1(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.dark-theme':
+        specifier: 0.0.3
+        version: 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.light-theme':
+        specifier: 0.0.3
+        version: 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
       '@emotion/react':
         specifier: 11.10.5
         version: 11.10.5(@babel/core@7.21.0)(@types/react@18.2.48)(react@18.2.0)
@@ -47,9 +71,15 @@ importers:
       '@showoff/personal-portfolio.ui.person.picture':
         specifier: 0.0.40
         version: 0.0.40(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0)
+      '@teambit/cloud-providers.deployers.netlify':
+        specifier: 0.1.25
+        version: 0.1.25(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 0.0.496
         version: 0.0.496(react-dom@18.2.0)(react@18.2.0)
+      '@vitejs/plugin-react':
+        specifier: ^4.2.1
+        version: 4.2.1(vite@5.0.12)
       formik:
         specifier: 2.2.9
         version: 2.2.9(react@18.2.0)
@@ -62,12 +92,127 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      react-helmet:
+        specifier: ^6.1.0
+        version: 6.1.0(react@18.2.0)
       react-router-dom:
         specifier: 6.0.2
         version: 6.0.2(react-dom@18.2.0)(react@18.2.0)
       subscriptions-transport-ws:
         specifier: 0.11.0
         version: 0.11.0(graphql@16.6.0)
+      vite:
+        specifier: ^5.0.11
+        version: 5.0.12(sass@1.70.0)
+      webpack:
+        specifier: ^5.89.0
+        version: 5.90.0
+      yup:
+        specifier: 1.0.0
+        version: 1.0.0
+    devDependencies:
+      '@cosmo-cruises/dev.envs.cosmos-react':
+        specifier: 0.0.2
+        version: 0.0.2(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@13.4.0)(@types/react@18.2.48)
+      '@testing-library/react':
+        specifier: 13.4.0
+        version: 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/react':
+        specifier: ^18.0.0
+        version: 18.2.48
+      '@types/react-dom':
+        specifier: ^18.0.0
+        version: 18.2.18
+
+  forever-mars/forever-mars-app:
+    dependencies:
+      '@apollo/client':
+        specifier: 3.7.7
+        version: 3.7.7(graphql@16.6.0)(react-dom@18.2.0)(react@18.2.0)(subscriptions-transport-ws@0.11.0)
+      '@babel/core':
+        specifier: 7.21.0
+        version: 7.21.0
+      '@babel/runtime':
+        specifier: 7.21.0
+        version: 7.21.0
+      '@bitdev/react.app-types.vite-react':
+        specifier: 1.1.15
+        version: 1.1.15
+      '@cosmo-cruises/booking.pages.book-a-trip':
+        specifier: 0.0.7
+        version: 0.0.7(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/design.themes.theme-provider':
+        specifier: 0.0.2
+        version: 0.0.2(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/forever-mars.contexts.settings-context':
+        specifier: 0.0.1
+        version: 0.0.1(react@18.2.0)
+      '@cosmo-cruises/forever-mars.layouts.main':
+        specifier: 0.0.1
+        version: 0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/marketing.constants.data':
+        specifier: 0.0.1
+        version: 0.0.1(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.dark-theme':
+        specifier: 0.0.3
+        version: 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.light-theme':
+        specifier: 0.0.3
+        version: 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@emotion/react':
+        specifier: 11.10.5
+        version: 11.10.5(@babel/core@7.21.0)(@types/react@18.2.48)(react@18.2.0)
+      '@emotion/styled':
+        specifier: 11.10.5
+        version: 11.10.5(@babel/core@7.21.0)(@emotion/react@11.10.5)(@types/react@18.2.48)(react@18.2.0)
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@mui/icons-material':
+        specifier: 5.11.0
+        version: 5.11.0(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/lab':
+        specifier: 5.0.0-alpha.117
+        version: 5.0.0-alpha.117(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@mui/material@5.11.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@mui/material':
+        specifier: 5.11.0
+        version: 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/cloud-providers.deployers.netlify':
+        specifier: 0.1.25
+        version: 0.1.25(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 0.0.496
+        version: 0.0.496(react-dom@18.2.0)(react@18.2.0)
+      '@vitejs/plugin-react':
+        specifier: ^4.2.1
+        version: 4.2.1(vite@5.0.12)
+      formik:
+        specifier: 2.2.9
+        version: 2.2.9(react@18.2.0)
+      graphql:
+        specifier: 16.6.0
+        version: 16.6.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-helmet:
+        specifier: ^6.1.0
+        version: 6.1.0(react@18.2.0)
+      react-router-dom:
+        specifier: 6.0.2
+        version: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+      subscriptions-transport-ws:
+        specifier: 0.11.0
+        version: 0.11.0(graphql@16.6.0)
+      vite:
+        specifier: ^5.0.11
+        version: 5.0.12(sass@1.70.0)
       webpack:
         specifier: ^5.89.0
         version: 5.90.0
@@ -190,6 +335,9 @@ importers:
       '@cosmo-cruises/dev.envs.cosmos-react':
         specifier: 0.0.2
         version: 0.0.2(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@13.4.0)(@types/react@18.2.48)
+      '@cosmo-cruises/forever-mars.forever-mars-app':
+        specifier: workspace:*
+        version: file:forever-mars/forever-mars-app(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(@vitejs/plugin-react@4.2.1)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)(vite@5.0.12)
       '@cosmo-cruises/marketing.pages.homepage':
         specifier: workspace:*
         version: file:marketing/pages/homepage(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
@@ -239,6 +387,122 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
     dependenciesMeta:
+      '@cosmo-cruises/forever-mars.forever-mars-app':
+        injected: true
+      '@cosmo-cruises/marketing.pages.homepage':
+        injected: true
+
+  node_modules/.bit_roots/cosmo-cruises.forever-mars_forever-mars-app:
+    dependencies:
+      '@apollo/client':
+        specifier: 3.7.7
+        version: 3.7.7(graphql@16.6.0)(react-dom@18.2.0)(react@18.2.0)(subscriptions-transport-ws@0.11.0)
+      '@babel/core':
+        specifier: 7.21.0
+        version: 7.21.0
+      '@babel/runtime':
+        specifier: 7.21.0
+        version: 7.21.0
+      '@bitdev/react.app-types.vite-react':
+        specifier: 1.1.15
+        version: 1.1.15
+      '@cosmo-cruises/booking.pages.book-a-trip':
+        specifier: 0.0.7
+        version: 0.0.7(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/design.themes.theme-provider':
+        specifier: 0.0.2
+        version: 0.0.2(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/forever-mars.contexts.settings-context':
+        specifier: 0.0.1
+        version: 0.0.1(react@18.2.0)
+      '@cosmo-cruises/forever-mars.forever-mars-app':
+        specifier: workspace:*
+        version: file:forever-mars/forever-mars-app(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(@vitejs/plugin-react@4.2.1)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)(vite@5.0.12)
+      '@cosmo-cruises/forever-mars.layouts.main':
+        specifier: 0.0.1
+        version: 0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/marketing.constants.data':
+        specifier: 0.0.1
+        version: 0.0.1(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/marketing.pages.homepage':
+        specifier: workspace:*
+        version: file:marketing/pages/homepage(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.dark-theme':
+        specifier: 0.0.3
+        version: 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.light-theme':
+        specifier: 0.0.3
+        version: 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@emotion/react':
+        specifier: 11.10.5
+        version: 11.10.5(@babel/core@7.21.0)(@types/react@18.2.48)(react@18.2.0)
+      '@emotion/styled':
+        specifier: 11.10.5
+        version: 11.10.5(@babel/core@7.21.0)(@emotion/react@11.10.5)(@types/react@18.2.48)(react@18.2.0)
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@mui/icons-material':
+        specifier: 5.11.0
+        version: 5.11.0(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/lab':
+        specifier: 5.0.0-alpha.117
+        version: 5.0.0-alpha.117(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@mui/material@5.11.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@mui/material':
+        specifier: 5.11.0
+        version: 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/cloud-providers.deployers.netlify':
+        specifier: 0.1.25
+        version: 0.1.25(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 0.0.496
+        version: 0.0.496(react-dom@18.2.0)(react@18.2.0)
+      formik:
+        specifier: 2.2.9
+        version: 2.2.9(react@18.2.0)
+      graphql:
+        specifier: 16.6.0
+        version: 16.6.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-helmet:
+        specifier: ^6.1.0
+        version: 6.1.0(react@18.2.0)
+      react-router-dom:
+        specifier: 6.0.2
+        version: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+      subscriptions-transport-ws:
+        specifier: 0.11.0
+        version: 0.11.0(graphql@16.6.0)
+      webpack:
+        specifier: ^5.89.0
+        version: 5.90.0
+      yup:
+        specifier: 1.0.0
+        version: 1.0.0
+    devDependencies:
+      '@cosmo-cruises/dev.envs.cosmos-react':
+        specifier: 0.0.2
+        version: 0.0.2(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@13.4.0)(@types/react@18.2.48)
+      '@testing-library/react':
+        specifier: 13.4.0
+        version: 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.11
+      '@types/react':
+        specifier: ^18.0.0
+        version: 18.2.48
+      '@types/react-dom':
+        specifier: ^18.0.0
+        version: 18.2.18
+    dependenciesMeta:
+      '@cosmo-cruises/forever-mars.forever-mars-app':
+        injected: true
       '@cosmo-cruises/marketing.pages.homepage':
         injected: true
 
@@ -6579,6 +6843,27 @@ packages:
   /@bcoe/v8-coverage@0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
+  /@bitdev/react.app-types.vite-react@1.1.15:
+    resolution: {integrity: sha512-uVheV5gZS6QvfA6yKFUlnCtPcZIrI7w7qc8E0GcpH+9DwxLg0WSoo5dVm1rlzFlJnX/+lS6uD+qyDxXpFfyhPA==}
+    dependencies:
+      '@teambit/toolbox.network.get-port': 1.0.4
+      '@teambit/vite.esm-packages.vite': 0.0.0-3bfb6c5bebd1e8874d943480987554d0adb5854b(sass@1.70.0)
+      compression: 1.7.4
+      express: 4.18.2
+      find-root: 1.1.0
+      lodash: 4.17.21
+      vite: 5.0.12(sass@1.70.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+    dev: false
+
   /@bitdev/react.generators.react-templates@1.1.12:
     resolution: {integrity: sha512-XYrKrirmhN8skXnf3eMl4iDpeKuBeS/5DlNlh/aoaoJEGk0wduTgBZdIHutkMoHj/McFmESBe3FE1jl8ydddlQ==}
     dependencies:
@@ -6686,6 +6971,108 @@ packages:
       react-error-overlay: 6.0.9
       strip-ansi: 6.0.0
 
+  /@cosmo-cruises/booking.entities.travel-booking@0.0.2:
+    resolution: {integrity: sha512-giJWQeBWvscmglPyJ1UtYKAwpoM8MnW14jKI/UM0CTpgkjGM5yK0X+mr3f6LITNVKAoCiLNR8RxjMWGPnLysLw==}
+    dependencies:
+      zod: 3.22.4
+    dev: false
+
+  /@cosmo-cruises/booking.forms.book-a-mars-trip@0.0.4(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-BEsEPVF5tnpoCy3mY7n7luRuyJ5MJD38K655SdF+4g/1NShFDV7vslTaw04SuGqLUTrMFuLkiu9TEkAgPYrodQ==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/booking.entities.travel-booking': 0.0.2
+      '@cosmo-cruises/design.patterns.form': 0.0.3(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/design.ui.actions.success-message': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@hookform/resolvers': 3.3.2(react-hook-form@7.49.3)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+      react-hook-form: 7.49.3(react@18.2.0)
+    transitivePeerDependencies:
+      - '@mui/lab'
+    dev: false
+
+  /@cosmo-cruises/booking.pages.book-a-trip@0.0.7(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-v22GIzYyoTiDnO/dxiZHRmzZmN8vAHxZGGyv2gLx2v9KhsKahEpM3XY7g3lzSKQQi1OQgOm7YrJQ0qcn4+8rOg==}
+    peerDependencies:
+      '@mui/material': '*'
+      react: '*'
+      react-router-dom: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      react:
+        optional: true
+      react-router-dom:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/booking.forms.book-a-mars-trip': 0.0.4(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/design.typography.typography': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/design.ui.navigation.breadcrumb': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@showoff/contact-me.ui.artwork': 0.0.39(@mui/material@5.11.0)(react@18.2.0)
+      '@showoff/design.layouts.margin': 0.0.24(react@18.2.0)
+      react: 18.2.0
+      react-router-dom: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@mui/lab'
+      - '@types/react'
+    dev: false
+
+  /@cosmo-cruises/design.foundation.typography.heading@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-8Cq+GZ9H8fLL19CQGThkh1Rdmlyl1VIzD9FKRwywOZZ87YY6mIxl4kFSJJnz0kL8tzrTJYfY7MXtRHt9cM/rcA==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmo-cruises/design.patterns.form@0.0.3(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-WXQ0LE6T54EtUM2jdFgyap4ABI6SBTuCf4nPCiQmIoGvNFFIs9faFfNDZYbNmt5whPfdqOJCYLi5qW9pd+Beig==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/design.ui.inputs.button': 0.0.3(@mui/lab@5.0.0-alpha.117)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/design.ui.inputs.text-field': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+      react-hook-form: 7.49.3(react@18.2.0)
+    transitivePeerDependencies:
+      - '@mui/lab'
+    dev: false
+
   /@cosmo-cruises/design.themes.theme-provider@0.0.2(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
     resolution: {integrity: sha512-ZwMKE6QTesJnDIeEJiQgTEkbOZdMFqb5yIn7hYBlbOc35sP1M9+1k49LWqZzKJ18CeCIp9NBS9KzybwR/WAYIQ==}
     peerDependencies:
@@ -6704,6 +7091,102 @@ packages:
       '@showoff/design.theme.light-theme': 0.0.30(@mui/material@5.11.0)(react@18.2.0)
       '@types/react': 18.2.48
       react: 18.2.0
+
+  /@cosmo-cruises/design.typography.typography@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-K57x+/XlXOoiEw5AsVU33zh9joB5w9WEqlgtBfs7FPWZq42NpOOtdCfMougUauFt4H5bx09+oUu8V3YR47dUeQ==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmo-cruises/design.ui.actions.success-message@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-aO8royjrzpouAUSp+09UJ75oBLhvsvPOAXrWrcuaGLyWQ58wBnLS90jaNYyTbWEyV+wQhquSsvnLdUEAIGC7Wg==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmo-cruises/design.ui.inputs.button@0.0.3(@mui/lab@5.0.0-alpha.117)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-nHoyTdZK106wFoj9TsVYGOsEx7MsRAeYQw5M+ThWXtoYbt+4alpnBLxKev0cv4Zv6jw3zrgsQQ4a5ZPYgm9LoQ==}
+    peerDependencies:
+      '@mui/lab': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/lab':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/lab': 5.0.0-alpha.117(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@mui/material@5.11.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmo-cruises/design.ui.inputs.text-field@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-d06VquCsnpCHEfDnUcP+glOkYguzy3bDssqokh4w8UR+ISNFK6v+oOTgzLmUjrPZz7x9ZHKhBmFLr46PS/CXhQ==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmo-cruises/design.ui.navigation.breadcrumb@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-VrzX8Z+5RuuPD2rlojd3h8bf0ysJbRffCUXw1ipavUl4DQJHmwbcMBlZhKJX300qUQbHrt6nE8D//1qLfl7xGw==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/design.foundation.typography.heading': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
 
   /@cosmo-cruises/dev.envs.cosmos-react@0.0.2(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@13.4.0)(@types/react@18.2.48):
     resolution: {integrity: sha512-Q6KrQznwIpbMgHGL1GqnGuqW7VtKjyVNnMiMPWqyWYdiHnRLToU5BljyTpMv8odqTXZ2L5/0TNWdi1eV9WmzLg==}
@@ -6789,6 +7272,173 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+
+  /@cosmo-cruises/forever-mars.contexts.settings-context@0.0.1(react@18.2.0):
+    resolution: {integrity: sha512-ZOCW+8wbDZhg8IVfWknb6aL4SNuZI7bTfXvQy7F86PwdzLTwIrLkIL+S42PTmIuS4gw9m9bqhClc3UWVFp+xYg==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/forever-mars.hooks.use-local-storage': 0.0.1
+      react: 18.2.0
+    dev: false
+
+  /@cosmo-cruises/forever-mars.hooks.use-local-storage@0.0.1:
+    resolution: {integrity: sha512-Aq6mFnNOsQMgDNZ9ik1oHs8Y3XWXCswTknH6HRP26YIaPxiNU3Hb5uNhMHP4bq2kRgGgq6g/NgQxW1TbAUqbBA==}
+    dev: false
+
+  /@cosmo-cruises/forever-mars.layouts.main@0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-yc9VomDL+DRrtDZDXCNIhSid758yQ8lZlPKddyxPhzNUML8hO09lPVWX1kFGgUuulMIfZC9JJ1MwP3CVo5lehw==}
+    peerDependencies:
+      '@mui/material': '*'
+      react: '*'
+      react-router-dom: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      react:
+        optional: true
+      react-router-dom:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/forever-mars.navigation.appbar': 0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@showoff/personal-portfolio.navigation.appfooter': 0.0.41(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0)
+      react: 18.2.0
+      react-router-dom: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@mui/icons-material'
+      - '@testing-library/react'
+    dev: false
+
+  /@cosmo-cruises/forever-mars.navigation.appbar@0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-CmcncxSCNOeMGatC7q9loMgIcitT5CX1XHUMCsaVovq2z1LooTXavco9SC1ZOyQ+mSj/07MvjevD9cjpDbKRcA==}
+    peerDependencies:
+      react: '*'
+      react-router-dom: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-router-dom:
+        optional: true
+    dependencies:
+      '@cosmo-cruises/forever-mars.contexts.settings-context': 0.0.1(react@18.2.0)
+      '@showoff/design.navigation.header': 0.0.46(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@showoff/design.theme.theme-toggle': 0.0.34(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(react@18.2.0)
+      react: 18.2.0
+      react-router-dom: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@mui/icons-material'
+      - '@mui/material'
+      - '@testing-library/react'
+    dev: false
+
+  /@cosmo-cruises/marketing.constants.data@0.0.1(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-pnIt2zRSg6Fsq8oC4k81Ksn2VpWkIVaODs8h8bHiBjUy1TzQROhuv3sEAY6LUx+R0thhAYIL65/CePph94FvdQ==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      '@cosmos-cruises/design.brand.logo': 0.0.2(@mui/material@5.11.0)(react@18.2.0)
+      '@showoff/design.navigation.footer': 0.0.47(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0)
+      '@showoff/design.navigation.header': 0.0.46(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@showoff/personal-portfolio.ui.social.icons': 0.0.16(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - '@mui/material'
+      - '@testing-library/react'
+      - '@types/react'
+      - react-dom
+      - react-router-dom
+    dev: false
+
+  /@cosmos-cruises/cosmos-design.fonts.ciruclar-xx@0.0.3:
+    resolution: {integrity: sha512-QlIeFRrI40tuxcv6e2T2R8FvH9clad96d0s7nNn6bhzaziirV59fUuRP7udSJ9IOecIv9y4y5+ht2joPUFduPw==}
+    dev: false
+
+  /@cosmos-cruises/cosmos-design.theme.base-theme@0.0.3(@mui/material@5.11.0):
+    resolution: {integrity: sha512-3uPeX63abAM6I8+D6MKyxEyIaM+832LEo+jMwec+hRh/V4pFM/CPjq6iLkj+NiiKr4o/P2Rp/OJdOqbvuKkRMg==}
+    peerDependencies:
+      '@mui/material': '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+    dependencies:
+      '@cosmos-cruises/cosmos-design.fonts.ciruclar-xx': 0.0.3
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+    dev: false
+
+  /@cosmos-cruises/cosmos-design.theme.dark-theme@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-p3SVqgHctHtZLwP+Fw9++xuRjBd/QrW81/kmjdf6cZYXIvSJL+QnbgDQ47HaOKqbIWXnomGMwPQ0Aur3f9MhVw==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@cosmos-cruises/cosmos-design.theme.base-theme': 0.0.3(@mui/material@5.11.0)
+      '@cosmos-cruises/cosmos-design.theme.theme-creator': 0.0.3(@mui/material@5.11.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmos-cruises/cosmos-design.theme.light-theme@0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-ljT3FR7M1KeRoDoEsL39TEoXN3OlO99TT/WAzRXQO1jGRY73Q21W4je/g19INqWMk2VXOr+wzRX50bSOr7YBBA==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@cosmos-cruises/cosmos-design.theme.base-theme': 0.0.3(@mui/material@5.11.0)
+      '@cosmos-cruises/cosmos-design.theme.theme-creator': 0.0.3(@mui/material@5.11.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.48
+      react: 18.2.0
+    dev: false
+
+  /@cosmos-cruises/cosmos-design.theme.theme-creator@0.0.3(@mui/material@5.11.0):
+    resolution: {integrity: sha512-Rf2kEelOnK0rQP7Nio0D9dvxypiioOhp16KjwAdtfMoT7qq0vhgYOnY1NlFuBgCX3GZ74DvJauQyQFQffSlUhA==}
+    peerDependencies:
+      '@mui/material': '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+    dev: false
+
+  /@cosmos-cruises/design.brand.logo@0.0.2(@mui/material@5.11.0)(react@18.2.0):
+    resolution: {integrity: sha512-RNBjw0KW86wMNGBC7pIcLDfkheVebQdMh/f9oquffWEhRxKnfp9vj5J/VbtzxcoAJPxRQUfD+H9NscGg8kLQtw==}
+    peerDependencies:
+      '@mui/material': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
 
   /@csstools/normalize.css@12.1.1:
     resolution: {integrity: sha512-YAYeJ+Xqh7fUou1d1j9XHl44BmsuThiTr4iNrgCQ3J27IbhXsxXDGZ1cXv8Qvs99d4rBbLiSKy3+WZiet32PcQ==}
@@ -7318,6 +7968,17 @@ packages:
 
   /@hapi/bourne@2.1.0:
     resolution: {integrity: sha512-i1BpaNDVLJdRBEKeJWkVO6tYX6DMFBuwMhSuWqLsY4ufeTKGVuV5rBsUhxPayXqnnWHgXUAmWK16H/ykO5Wj4Q==}
+
+  /@hookform/resolvers@3.3.2(react-hook-form@7.49.3):
+    resolution: {integrity: sha512-Tw+GGPnBp+5DOsSg4ek3LCPgkBOuOgS5DsDV7qsWNH9LZc433kgsWICjlsh2J9p04H2K66hsXPPb9qn9ILdUtA==}
+    peerDependencies:
+      react-hook-form: '*'
+    peerDependenciesMeta:
+      react-hook-form:
+        optional: true
+    dependencies:
+      react-hook-form: 7.49.3(react@18.2.0)
+    dev: false
 
   /@humanwhocodes/config-array@0.5.0:
     resolution: {integrity: sha512-FagtKFz74XrTl7y6HCzQpwDfXP0yhxe9lHLD1UZxjvZIcbyRz8zTFF/yYNfSfzU414eDwZ1SrO0Qvtyf+wFMQg==}
@@ -8258,6 +8919,21 @@ packages:
     requiresBuild: true
     optional: true
 
+  /@showoff/contact-me.ui.artwork@0.0.39(@mui/material@5.11.0)(react@18.2.0):
+    resolution: {integrity: sha512-R+HvRvqJLT2MsXpOOInHARJzflf9cJI4dUdO7ur/oRtwxLPfV8rjUg89ZU8I5vv40ep440oyhI8fKrUVtr0nng==}
+    peerDependencies:
+      '@mui/material': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@showoff/design.fonts.ciruclar-xx@0.0.7:
     resolution: {integrity: sha1-u+nRSzEU/c6eheVzIQd+2i4R7RQ=}
 
@@ -8270,6 +8946,70 @@ packages:
         optional: true
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@showoff/design.navigation.footer@0.0.47(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0):
+    resolution: {integrity: sha512-mKLEwKe/QNmxu1+61AqbcwLRvyEw9G0ZAwDsk3kZiGT1a/QcC73tZycoEtlpPYMyKm6Ftx34WX8VjJ2xQHtKoA==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@testing-library/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@testing-library/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@showoff/design.typography.typography': 0.0.36(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0)
+      '@testing-library/react': 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@showoff/design.navigation.header@0.0.46(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-wHHVBvXzXnWFRclRVbLd0aBr7seRo9C4cZ9piV9ybBkDAMv430SiLVKbmT8vGEcNhfftoSuVsWYgFz9+k57rwg==}
+    peerDependencies:
+      '@mui/material': '*'
+      '@testing-library/react': '*'
+      react: '*'
+      react-router-dom: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@testing-library/react':
+        optional: true
+      react:
+        optional: true
+      react-router-dom:
+        optional: true
+    dependencies:
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@showoff/design.navigation.link': 0.0.24(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@showoff/design.typography.typography': 0.0.36(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0)
+      '@testing-library/react': 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-router-dom: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+    dev: false
+
+  /@showoff/design.navigation.link@0.0.24(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-TpTiqBl3xuwyNYTh1ss8mWv4NRWSevW3B/3zd9zW3Usl30uCD2bI2nSYD/I0kHV07pkBeVlrOUzez4J1SSc/rg==}
+    peerDependencies:
+      '@testing-library/react': '*'
+      react: '*'
+      react-router-dom: '*'
+    peerDependenciesMeta:
+      '@testing-library/react':
+        optional: true
+      react:
+        optional: true
+      react-router-dom:
+        optional: true
+    dependencies:
+      '@testing-library/react': 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-router-dom: 6.0.2(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@showoff/design.theme.base-theme@0.0.16(@mui/material@5.11.0):
@@ -8309,6 +9049,25 @@ packages:
     dependencies:
       '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
 
+  /@showoff/design.theme.theme-toggle@0.0.34(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(react@18.2.0):
+    resolution: {integrity: sha512-V4LsBoXQNJVxYiRYuFRDdOACvUeW3XVPWwIfCOcETRxDxG7kI3y8RkYuR7UA7Z8izAXpUyukQhL+Mu/PA5rElQ==}
+    peerDependencies:
+      '@mui/icons-material': '*'
+      '@mui/material': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@mui/icons-material':
+        optional: true
+      '@mui/material':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@mui/icons-material': 5.11.0(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@showoff/design.typography.heading@0.0.36(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0):
     resolution: {integrity: sha512-sq5xxHGMuwpa6kt7gK9vHM/azJKCkh0BgTP3cIgoIr75SNtPshzCUM1d+zZfEIZBIcc6T+O8p1WGZyda5Sg/Pg==}
     peerDependencies:
@@ -8347,6 +9106,24 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@showoff/personal-portfolio.navigation.appfooter@0.0.41(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0):
+    resolution: {integrity: sha512-B20gQ8LKS+hclbAnSVNmxJf06Vow5479m8kqBGB5zRB6qxct4aXmsJ7o7e5kwliHggZKbvWi0YtB/YwYCrJOtg==}
+    peerDependencies:
+      '@testing-library/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@testing-library/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@showoff/design.navigation.footer': 0.0.47(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react@18.2.0)
+      '@testing-library/react': 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - '@mui/material'
+    dev: false
+
   /@showoff/personal-portfolio.ui.person.artwork@0.0.40(@mui/material@5.11.0)(react@18.2.0):
     resolution: {integrity: sha512-OzQ69MDjlHUOpqBI+RYPHYeRIwC8uOa5Qw+MHU6nE/JazacFjjbEwfEGLcPBIjORB4Fh2f6TqT8zVIKcYdDe/Q==}
     peerDependencies:
@@ -8380,6 +9157,22 @@ packages:
       '@showoff/personal-portfolio.ui.person.artwork': 0.0.40(@mui/material@5.11.0)(react@18.2.0)
       '@testing-library/react': 13.4.0(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
+    dev: false
+
+  /@showoff/personal-portfolio.ui.social.icons@0.0.16(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Dgbam3S7LRNNxUuxnhz8jPyzR0+CP0oIVhw0r60+JXDQ9pmbhfnNAt0W9OI0pYrXMtUt5IrfcvHayy0sTiy0Ig==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      '@teambit/people.ui.social-links': 0.0.6(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - '@testing-library/react'
+      - '@types/react'
+      - react-dom
     dev: false
 
   /@sinclair/typebox@0.27.8:
@@ -9259,6 +10052,29 @@ packages:
   /@teambit/bit-error@0.0.402:
     resolution: {integrity: sha512-hYIJQWD5UCiD35WAIy0YGySW63PP0GyNIpCDmAOYxRGpA0RMQD+zacKpG1SH6iAfsg8NF/Am8lWis1Lg9ihQtQ==}
     engines: {node: '>=12.22.0'}
+
+  /@teambit/cloud-providers.clients.netlify@0.0.10:
+    resolution: {integrity: sha512-DRAT97a+6haIJkQY+eosFUGr7wVhyEprHtd8nqjYGV15oQPboQWMQwUs1aUZufPQE5zT09Qd/Am4Lazzb2QHPA==}
+    dependencies:
+      archiver: 5.3.2
+      axios: 1.3.2
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@teambit/cloud-providers.deployers.netlify@0.1.25(react@18.2.0):
+    resolution: {integrity: sha512-pOX2PtHOTjTju+a99M0PZ+SiMRSxnH8RR4ug4AcXXC7RmmNU6RWg0Scql6YIAtNrx8Y4RGI3mYF7ZEsdMIftxQ==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      '@teambit/cloud-providers.clients.netlify': 0.0.10
+      react: 18.2.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /@teambit/community.constants.links@0.0.2:
     resolution: {integrity: sha1-cUo3bbFCwlI564kZTrREbBRp234=}
@@ -11430,6 +12246,30 @@ packages:
   /@teambit/node.deps-detectors.parser-helper@0.0.0-1ca3300f0fe89cba790beb930903095053a2a24a:
     resolution: {integrity: sha1-UTUJiakxdUY1KZKMoaxTLTrRap8=, tarball: https://node-registry.bit.cloud/@teambit/node.deps-detectors.parser-helper/-/teambit-node.deps-detectors.parser-helper-0.0.0-1ca3300f0fe89cba790beb930903095053a2a24a.tgz}
 
+  /@teambit/people.ui.social-links@0.0.6(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha1-ScDvphAsxbaUpsDpBJmd29HFzTo=, tarball: https://node-registry.bit.cloud/tarballs/teambit.people/ui/social-links@0.0.6.tgz}
+    peerDependencies:
+      '@testing-library/react': '*'
+      react: '*'
+      react-dom: '*'
+    peerDependenciesMeta:
+      '@testing-library/react':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@teambit/base-react.navigation.link': 2.0.27(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@testing-library/react': 13.4.0(react-dom@18.2.0)(react@18.2.0)
+      classnames: 2.3.1
+      core-js: 3.35.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
+    dev: false
+
   /@teambit/preview.react-preview@0.0.38(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@13.4.0)(@types/react@18.2.48)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.3):
     resolution: {integrity: sha512-Q9vBvBX37be4C2he9Tq69TPE9YXHbikpvP6YQF4QnKer+AUPHRc6SYkt/66StXpO9sWSzSO9ou1AbPD4wY7c+Q==}
     peerDependencies:
@@ -12689,6 +13529,11 @@ packages:
   /@teambit/toolbox.network.get-port@0.0.121:
     resolution: {integrity: sha1-XuOaoA9egIDH+nPU155/XvGTIV4=}
     engines: {node: '>=12.22.0'}
+
+  /@teambit/toolbox.network.get-port@1.0.4:
+    resolution: {integrity: sha512-P3r2j69+6udYvDd5aBGK+jO3sdjwwgcWjcuirZ1TW6/jz50IdP4W0AEObTvZWz5Iy4yFCLSMD3AB6BA72rveXA==}
+    engines: {node: '>=12.22.0'}
+    dev: false
 
   /@teambit/toolbox.performance.v8-cache@0.0.27:
     resolution: {integrity: sha1-R5dw8hCBusW4J6DZpInHOLLmjXw=}
@@ -14306,6 +15151,51 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
+  /archiver-utils@2.1.0:
+    resolution: {integrity: sha512-bEL/yUb/fNNiNTuUz979Z0Yg5L+LzLxGJz8x79lYmR54fmTIb6ob/hNQgkQnIUDWIFjZVQwl9Xs356I6BAMHfw==}
+    engines: {node: '>= 6'}
+    dependencies:
+      glob: 7.2.3
+      graceful-fs: 4.2.11
+      lazystream: 1.0.1
+      lodash.defaults: 4.2.0
+      lodash.difference: 4.5.0
+      lodash.flatten: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.union: 4.6.0
+      normalize-path: 3.0.0
+      readable-stream: 2.3.8
+    dev: false
+
+  /archiver-utils@3.0.4:
+    resolution: {integrity: sha512-KVgf4XQVrTjhyWmx6cte4RxonPLR9onExufI1jhvw/MQ4BB6IsZD5gT8Lq+u/+pRkWna/6JoHpiQioaqFP5Rzw==}
+    engines: {node: '>= 10'}
+    dependencies:
+      glob: 7.2.3
+      graceful-fs: 4.2.11
+      lazystream: 1.0.1
+      lodash.defaults: 4.2.0
+      lodash.difference: 4.5.0
+      lodash.flatten: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.union: 4.6.0
+      normalize-path: 3.0.0
+      readable-stream: 3.6.2
+    dev: false
+
+  /archiver@5.3.2:
+    resolution: {integrity: sha512-+25nxyyznAXF7Nef3y0EbBeqmGZgeN/BxHX29Rs39djAfaFalmQ89SE6CWyDCHzGL0yt/ycBtNOmGTW0FyGWNw==}
+    engines: {node: '>= 10'}
+    dependencies:
+      archiver-utils: 2.1.0
+      async: 3.2.5
+      buffer-crc32: 0.2.13
+      readable-stream: 3.6.2
+      readdir-glob: 1.1.3
+      tar-stream: 2.2.0
+      zip-stream: 4.1.1
+    dev: false
+
   /argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
@@ -14438,6 +15328,10 @@ packages:
     dependencies:
       lodash: 4.17.21
 
+  /async@3.2.5:
+    resolution: {integrity: sha512-baNZyqaaLhyLVKm/DlvdW051MSgO6b8eVfIezl9E5PqWxFgzLm/wQntEW4zOytVburDEr0JlALEpdOFwvErLsg==}
+    dev: false
+
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
@@ -14470,6 +15364,16 @@ packages:
   /axe-core@4.8.3:
     resolution: {integrity: sha512-d5ZQHPSPkF9Tw+yfyDcRoUOc4g/8UloJJe5J8m4L5+c7AtDdjDLRxew/knnI4CxvtdxEUVgWz4x3OIQUIFiMfw==}
     engines: {node: '>=4'}
+
+  /axios@1.3.2:
+    resolution: {integrity: sha512-1M3O703bYqYuPhbHeya5bnhpYVsDDRyQSabNja04mZtboLNSuZ4YrltestrLXfHgmzua4TpUqRiVKbiQuo2epw==}
+    dependencies:
+      follow-redirects: 1.15.5
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /axobject-query@2.2.0:
     resolution: {integrity: sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==}
@@ -15040,6 +15944,14 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
 
+  /bl@4.1.0:
+    resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
+    dependencies:
+      buffer: 5.7.1
+      inherits: 2.0.4
+      readable-stream: 3.6.2
+    dev: false
+
   /bn.js@4.12.0:
     resolution: {integrity: sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==}
 
@@ -15188,11 +16100,22 @@ packages:
     dependencies:
       node-int64: 0.4.0
 
+  /buffer-crc32@0.2.13:
+    resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
+    dev: false
+
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
   /buffer-xor@1.0.3:
     resolution: {integrity: sha512-571s0T7nZWK6vB67HI5dyUF7wXiNcfaPPPTl6zYCNApANjIvYJTg7hlud/+cJpdAhS7dVzqMLmfhfHR3rAcOjQ==}
+
+  /buffer@5.7.1:
+    resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.2.1
+    dev: false
 
   /buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
@@ -15500,6 +16423,16 @@ packages:
       q: 1.5.1
       recast: 0.11.23
 
+  /compress-commons@4.1.2:
+    resolution: {integrity: sha512-D3uMHtGc/fcO1Gt1/L7i1e33VOvD4A9hfQLP+6ewd+BvG/gQ84Yh4oftEhAdjSMgBgwGL+jsppT7JYNpo6MHHg==}
+    engines: {node: '>= 10'}
+    dependencies:
+      buffer-crc32: 0.2.13
+      crc32-stream: 4.0.3
+      normalize-path: 3.0.0
+      readable-stream: 3.6.2
+    dev: false
+
   /compressible@2.0.18:
     resolution: {integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==}
     engines: {node: '>= 0.6'}
@@ -15645,6 +16578,20 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       typescript: 5.1.3
+
+  /crc-32@1.2.2:
+    resolution: {integrity: sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==}
+    engines: {node: '>=0.8'}
+    hasBin: true
+    dev: false
+
+  /crc32-stream@4.0.3:
+    resolution: {integrity: sha512-NT7w2JVU7DFroFdYkeq8cywxrgjPHWkdX1wjpRQXPX5Asews3tA+Ght6lddQO5Mkumffp3X7GEqku3epj2toIw==}
+    engines: {node: '>= 10'}
+    dependencies:
+      crc-32: 1.2.2
+      readable-stream: 3.6.2
+    dev: false
 
   /create-ecdh@4.0.4:
     resolution: {integrity: sha512-mf+TCx8wWc9VpuxfP2ht0iSISLZnt0JgWlrOKZiNqyUZWnjIaCIVNQArMHnCZKfEYRg6IM7A+NeJoN8gf/Ws0A==}
@@ -18039,6 +18986,10 @@ packages:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
     engines: {node: '>= 0.6'}
 
+  /fs-constants@1.0.0:
+    resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
+    dev: false
+
   /fs-extra@10.0.0:
     resolution: {integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==}
     engines: {node: '>=12'}
@@ -19851,6 +20802,13 @@ packages:
       picocolors: 1.0.0
       shell-quote: 1.8.1
 
+  /lazystream@1.0.1:
+    resolution: {integrity: sha512-b94GiNHQNy6JNTrt5w6zNyffMrNkXZb3KTkCZJb2V1xaEGCk093vkZ2jk3tpaeP33/OiXC+WvK9AxUebnf5nbw==}
+    engines: {node: '>= 0.6.3'}
+    dependencies:
+      readable-stream: 2.3.8
+    dev: false
+
   /less-loader@11.1.0(webpack@5.84.1):
     resolution: {integrity: sha512-C+uDBV7kS7W5fJlUjq5mPBeBVhYpTIm5gB09APT9o3n/ILeaXVsiSFTbZpTJCJwQ/Crczfn3DmfQFwxYusWFug==}
     engines: {node: '>= 14.15.0'}
@@ -19979,11 +20937,27 @@ packages:
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
+  /lodash.defaults@4.2.0:
+    resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}
+    dev: false
+
+  /lodash.difference@4.5.0:
+    resolution: {integrity: sha512-dS2j+W26TQ7taQBGN8Lbbq04ssV3emRw4NY58WErlTO29pIqS0HmoT5aJ9+TUQ1N3G+JOZSji4eugsWwGp9yPA==}
+    dev: false
+
+  /lodash.flatten@4.4.0:
+    resolution: {integrity: sha512-C5N2Z3DgnnKr0LOpv/hKCgKdb7ZZwafIrsesve6lmzvZIRZRGaZ/l6Q8+2W7NaT+ZwO3fFlSCzCzrDCFdJfZ4g==}
+    dev: false
+
   /lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
 
   /lodash.has@4.5.2:
     resolution: {integrity: sha512-rnYUdIo6xRCJnQmbVFEwcxF144erlD+M3YcJUVesflU9paQaE8p+fJDcIQrlMYbxoANFL+AB9hZrzSBBk5PL+g==}
+
+  /lodash.isplainobject@4.0.6:
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
+    dev: false
 
   /lodash.memoize@4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
@@ -19993,6 +20967,10 @@ packages:
 
   /lodash.truncate@4.4.2:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
+
+  /lodash.union@4.6.0:
+    resolution: {integrity: sha512-c4pB2CdGrGdjMKYLA+XiRDO7Y0PRQbm/Gzg8qMj+QH+pFVAoTp5sBpO0odL3FjoPCGjK96p6qsP+yQoiLoOBcw==}
+    dev: false
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
@@ -20651,6 +21629,13 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
+
+  /minimatch@5.1.6:
+    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: false
 
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
@@ -22600,6 +23585,10 @@ packages:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
+
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
 
@@ -22835,6 +23824,37 @@ packages:
   /react-fast-compare@2.0.4:
     resolution: {integrity: sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==}
 
+  /react-fast-compare@3.2.2:
+    resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+    dev: false
+
+  /react-helmet@6.1.0(react@18.2.0):
+    resolution: {integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-fast-compare: 3.2.2
+      react-side-effect: 2.1.2(react@18.2.0)
+    dev: false
+
+  /react-hook-form@7.49.3(react@18.2.0):
+    resolution: {integrity: sha512-foD6r3juidAT1cOZzpmD/gOKt7fRsDhXXZ0y28+Al1CHgX+AY1qIN9VSIIItXRq1dN68QrRwl1ORFlwjBaAqeQ==}
+    engines: {node: '>=18', pnpm: '8'}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -22921,6 +23941,17 @@ packages:
     dependencies:
       '@remix-run/router': 1.14.2
       react: 18.2.0
+
+  /react-side-effect@2.1.2(react@18.2.0):
+    resolution: {integrity: sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react-syntax-highlighter@13.5.3(react@18.2.0):
     resolution: {integrity: sha512-crPaF+QGPeHNIblxxCdf2Lg936NAHKhNhuMzRL3F9ct6aYXL3NcZtCL0Rms9+qVo6Y1EQLdXGypBNSbPL/r+qg==}
@@ -23052,6 +24083,12 @@ packages:
       inherits: 2.0.4
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
+
+  /readdir-glob@1.1.3:
+    resolution: {integrity: sha512-v05I2k7xN8zXvPD9N+z/uhXPaj0sUFCe2rcWZIpBsqxfP7xXFQ0tipAd/wjj1YxWyWtUS5IDJpOG82JKt2EAVA==}
+    dependencies:
+      minimatch: 5.1.6
+    dev: false
 
   /readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
@@ -24225,6 +25262,17 @@ packages:
   /tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
+
+  /tar-stream@2.2.0:
+    resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
+    engines: {node: '>=6'}
+    dependencies:
+      bl: 4.1.0
+      end-of-stream: 1.4.4
+      fs-constants: 1.0.0
+      inherits: 2.0.4
+      readable-stream: 3.6.2
+    dev: false
 
   /terser-webpack-plugin@5.2.0(esbuild@0.14.28)(webpack@5.51.1):
     resolution: {integrity: sha512-FpR4Qe0Yt4knSQ5u2bA1wkM0R8VlVsvhyfSHvomXRivS4vPLk0dJV2IhRBIHRABh7AFutdMeElIA5y1dETwMBg==}
@@ -25860,11 +26908,101 @@ packages:
   /zen-observable@0.8.15:
     resolution: {integrity: sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==}
 
+  /zip-stream@4.1.1:
+    resolution: {integrity: sha512-9qv4rlDiopXg4E69k+vMHjNN63YFMe9sZMrdlvKnCjlCRWeCBswPPMPUfx+ipsAWq1LXHe70RcbaHdJJpS6hyQ==}
+    engines: {node: '>= 10'}
+    dependencies:
+      archiver-utils: 3.0.4
+      compress-commons: 4.1.2
+      readable-stream: 3.6.2
+    dev: false
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: false
+
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
+
+  file:forever-mars/forever-mars-app(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(@vitejs/plugin-react@4.2.1)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)(vite@5.0.12):
+    resolution: {directory: forever-mars/forever-mars-app, type: directory}
+    id: file:forever-mars/forever-mars-app
+    name: '@cosmo-cruises/forever-mars.forever-mars-app'
+    peerDependencies:
+      '@mui/material': '*'
+      '@vitejs/plugin-react': '*'
+      react: '*'
+      react-dom: '*'
+      react-router-dom: '*'
+      vite: '*'
+    peerDependenciesMeta:
+      '@mui/material':
+        optional: true
+      '@vitejs/plugin-react':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      react-router-dom:
+        optional: true
+      vite:
+        optional: true
+    dependencies:
+      '@apollo/client': 3.7.7(graphql@16.6.0)(react-dom@18.2.0)(react@18.2.0)(subscriptions-transport-ws@0.11.0)
+      '@babel/core': 7.21.0
+      '@babel/runtime': 7.21.0
+      '@bitdev/react.app-types.vite-react': 1.1.15
+      '@cosmo-cruises/booking.pages.book-a-trip': 0.0.7(@mui/lab@5.0.0-alpha.117)(@mui/material@5.11.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/design.themes.theme-provider': 0.0.2(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmo-cruises/forever-mars.contexts.settings-context': 0.0.1(react@18.2.0)
+      '@cosmo-cruises/forever-mars.layouts.main': 0.0.1(@mui/icons-material@5.11.0)(@mui/material@5.11.0)(@testing-library/react@13.4.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/marketing.constants.data': 0.0.1(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-dom@18.2.0)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmo-cruises/marketing.pages.homepage': file:marketing/pages/homepage(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.dark-theme': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@cosmos-cruises/cosmos-design.theme.light-theme': 0.0.3(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@emotion/react': 11.10.5(@babel/core@7.21.0)(@types/react@18.2.48)(react@18.2.0)
+      '@emotion/styled': 11.10.5(@babel/core@7.21.0)(@emotion/react@11.10.5)(@types/react@18.2.48)(react@18.2.0)
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@mui/icons-material': 5.11.0(@mui/material@5.11.0)(@types/react@18.2.48)(react@18.2.0)
+      '@mui/lab': 5.0.0-alpha.117(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@mui/material@5.11.0)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@mui/material': 5.11.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/cloud-providers.deployers.netlify': 0.1.25(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.2.0)(react@18.2.0)
+      '@vitejs/plugin-react': 4.2.1(vite@5.0.12)
+      formik: 2.2.9(react@18.2.0)
+      graphql: 16.6.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-helmet: 6.1.0(react@18.2.0)
+      react-router-dom: 6.0.2(react-dom@18.2.0)(react@18.2.0)
+      subscriptions-transport-ws: 0.11.0(graphql@16.6.0)
+      vite: 5.0.12(sass@1.70.0)
+      webpack: 5.90.0
+      yup: 1.0.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@testing-library/react'
+      - '@types/node'
+      - '@types/react'
+      - bufferutil
+      - debug
+      - esbuild
+      - graphql-ws
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+    dev: false
 
   file:marketing/pages/homepage(@mui/material@5.11.0)(@testing-library/react@13.4.0)(@types/react@18.2.48)(react-router-dom@6.0.2)(react@18.2.0):
     resolution: {directory: marketing/pages/homepage, type: directory}
