@@ -1,6 +1,6 @@
 /**
  * this is the main configuration file of your bit workspace.
- * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
+ * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
  **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
@@ -14,7 +14,7 @@
     /**
      * set the icon to be shown on the Bit server.
      **/
-    "icon": "https://static.bit.dev/bit-logo.svg",
+    "icon": "https://static.bit.dev/brands/bit-logo-min.png",
     /**
      * default directory to place a component during `bit import` and `bit create`.
      * the following placeholders are available:
@@ -27,7 +27,21 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "cosmos-cruises.marketing"
+    "defaultScope": "my-scope",
+    "resolveAspectsFromNodeModules": true,
+    "resolveEnvsFromRoots": true
+  },
+  /**
+   * comment in to include generator templates in your workspace.
+   * browse more dev environments: https://bit.dev/docs/getting-started/composing/dev-environments
+  **/
+  "teambit.generator/generator": {
+    "envs": [
+      //  "bitdev.node/node-env",
+      //  "bitdev.react/react-env",
+      //  "bitdev.vue/vue-env",
+      //  "bitdev.angular/angular-env"
+    ]
   },
   /**
    * main configuration for component dependency resolution.
@@ -37,29 +51,13 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
+    "rootComponents": true,
     "policy": {
       "dependencies": {},
       "peerDependencies": {}
-    },
-    "linkCoreAspects": true,
-    "rootComponents": true
-  },
-  /**
-   * workspace variants allow to set different subsets of configuration for components in your
-   * workspace. this is extremely useful for upgrading, aligning and building components with a new
-   * set of dependencies. a rule can be a directory or a component-id/namespace, in which case,
-   * wrap the rule with curly brackets (e.g. `"{ui/*}": {}`)
-   * see https://bit.dev/docs/workspace/variants for more info.
-   **/
-  "teambit.workspace/variants": {
-    /**
-     * "*" is a special rule which applied on all components in the workspace.
-     **/
-    "*": {
-      /**
-       * uncomment to apply the chosen environment on all components.
-       **/
-      // "teambit.react/react": { }
     }
+  },
+  "teambit.workspace/workspace-config-files": {
+    "enableWorkspaceConfigWrite": true
   }
 }
