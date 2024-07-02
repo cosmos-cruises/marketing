@@ -51,13 +51,18 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
-    "rootComponents": true,
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@cosmos-cruises/cosmos-design.theme.dark-theme": "^0.0.4",
+        "@cosmos-cruises/cosmos-design.theme.light-theme": "^0.0.4"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
-  }
+  },
+  "cosmo-cruises.marketing/pages/homepage": {}
 }

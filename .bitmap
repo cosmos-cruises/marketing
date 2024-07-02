@@ -9,13 +9,6 @@
  */
 
 {
-    "forever-mars-app": {
-        "name": "forever-mars-app",
-        "scope": "cosmo-cruises.forever-mars",
-        "version": "0.0.3",
-        "mainFile": "index.ts",
-        "rootDir": "forever-mars/forever-mars-app"
-    },
     "pages/homepage": {
         "name": "pages/homepage",
         "scope": "cosmo-cruises.marketing",
